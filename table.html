@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블태그</title>
+    <link rel="stylesheet" href="https://ticktapcode.github.io/html/table.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>타이틀1</th>
+                <th>타이틀2</th>
+                <th>타이틀3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td colspan="2">내용2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+        </tbody>
+        <!-- thead/ tbody / tfoot이 있는데, 구획이 나눠지면 행은 합쳐지지 않아요! -->
+    </table>
+    <table>
+        <tr>
+            <td>제목</td>
+            <td>제목</td>
+            <td>제목</td>
+            <td>제목</td>
+        </tr>
+        <tr>
+            <td colspan="2">내용</td>
+            <td colspan="2">내용</td>
+        </tr>
+        <tr>
+            <td rowspan="2">내용</td>
+            <td>내용</td>
+            <td rowspan="2">내용</td>
+            <td>내용</td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td>내용</td>
+        </tr>
+    </table>
+
+</body>
+</html>
