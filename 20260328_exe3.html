@@ -17,6 +17,7 @@
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
+            text-align: center;
             /* 속성명 : 속성값; */
         }
         .hdr-top-wrap>.hdr-top>i{
@@ -30,6 +31,8 @@
             max-width: 1080px;
             margin: 0 auto;
             line-height: 80px;
+            display: flex;
+            justify-content: space-between;
         }
 
         .hdr-wrap>header>h1{
@@ -38,6 +41,7 @@
 
         .hdr-wrap>header>ul.gnb{
             width: calc(100% / 12 * 2);  
+            display: flex;
         }
 
         .hdr-wrap>header>ul.gnb>li{}
@@ -59,6 +63,9 @@
             height: 40px;
             line-height: 20px;
             width: calc(100% / 12 * 6);
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
         }
         .content-wrap>.content>section{}
         .content-wrap>.content>section>article{}
@@ -75,6 +82,7 @@
         .content-wrap>.content>section article>.texts>p{
             height: 80px;
             line-height: 20px;  
+            overflow: hidden;
         }
         
         /* 콘텐츠1 */
@@ -84,11 +92,14 @@
         .content-wrap.content1>.content.cnt1>header>h2{}
         .content-wrap.content1>.content.cnt1>header>h4{}
         .content-wrap.content1>.content.cnt1>section{}
-        .content-wrap.content1>.content.cnt1>section>.art-top{}
-        .content-wrap.content1>.content.cnt1>section>.art-top>article{}
-        .content-wrap.content1>.content.cnt1>section>.art-top>article>.image{
+        .content-wrap.content1>.content.cnt1>section>.art-top{
+            display: flex;
+            column-gap: 20px;
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-top>article{
             width: calc(50% - 10px);
         }
+        .content-wrap.content1>.content.cnt1>section>.art-top>article>.image{}
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts{}
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts>h3{}
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts>h4{}
@@ -96,8 +107,13 @@
         .content-wrap.content1>.content.cnt1>section>.art-top>article>.texts>.icons{
             line-height: 40px;
         }
-        .content-wrap.content1>.content.cnt1>section>.art-btm{}
-        .content-wrap.content1>.content.cnt1>section>.art-btm>article{}
+        .content-wrap.content1>.content.cnt1>section>.art-btm{
+            display: flex;
+            column-gap: 20px;
+        }
+        .content-wrap.content1>.content.cnt1>section>.art-btm>article{
+            width: calc(100% / 3 - 10px);
+        }
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.image{}
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts{}
         .content-wrap.content1>.content.cnt1>section>.art-btm>article>.texts>h3{}
@@ -113,7 +129,9 @@
         .content-wrap.content2>.content.cnt2>header>h2{}
         .content-wrap.content2>.content.cnt2>header>h4{}
         .content-wrap.content2>.content.cnt2>section{}
-        .content-wrap.content2>.content.cnt2>section>article{}
+        .content-wrap.content2>.content.cnt2>section>article{
+            display: flex;
+        }
         .content-wrap.content2>.content.cnt2>section>article>.image{
             height: 440px;
             width: 50%;
@@ -137,8 +155,13 @@
         .content-wrap.content3>.content.cnt3>header{}
         .content-wrap.content3>.content.cnt3>header>h2{}
         .content-wrap.content3>.content.cnt3>header>h4{}
-        .content-wrap.content3>.content.cnt3>section{}
-        .content-wrap.content3>.content.cnt3>section>article{}
+        .content-wrap.content3>.content.cnt3>section{
+            display: flex;
+            column-gap: 20px;
+        }
+        .content-wrap.content3>.content.cnt3>section>article{
+            width: calc(100% / 4 - 10px);
+        }
         .content-wrap.content3>.content.cnt3>section>article>.image{
             height: 200px;
         }
