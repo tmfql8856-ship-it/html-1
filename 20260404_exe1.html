@@ -9,29 +9,38 @@
     <link rel="stylesheet" href="./reset.css">
     <style>
         /* hdr-top-wrap */
-        .hdr-top-wrap {}
+        .hdr-top-wrap {
+            background-color: #212517;
+        }
         .hdr-top-wrap>.hdr-top {
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
+            line-height: 40px;
+            text-align: center;
         }
 
         .hdr-top-wrap>.hdr-top>i {}
 
         /* hdr-wrap */
-        .hdr-wrap {}
+        .hdr-wrap {
+            background-color: #a31f30;
+        }
 
         .hdr-wrap>header {
             width: 80%;
             max-width: 1080px;
             margin: 0 auto;
             display: flex;
+            justify-content: space-between;
+            line-height: 80px;
         }
 
         .hdr-wrap>header>h1 {}
 
         .hdr-wrap>header>ul {
             display: flex;
+            column-gap: 20px;
         }
 
         .hdr-wrap>header>ul>li {}
@@ -46,11 +55,21 @@
             margin-top: 80px;
         }
 
-        .cnt-wrap>.content>header {}
+        .cnt-wrap>.content>header {
+            text-align: center;
+        }
 
-        .cnt-wrap>.content>header>h2 {}
+        .cnt-wrap>.content>header>h2 {
+            line-height: 80px;
+        }
 
-        .cnt-wrap>.content>header>h4 {}
+        .cnt-wrap>.content>header>h4 {
+            height: 40px;
+            line-height: 20px;
+            overflow: hidden;
+            width: calc(100% / 12 * 6);
+            margin: 0 auto;
+        }
 
         .cnt-wrap>.content>section {
             margin-top: 40px;
@@ -58,17 +77,31 @@
 
         .cnt-wrap>.content>section>article {}
 
-        .cnt-wrap>.content>section>article>.image {}
+        .cnt-wrap>.content>section article>.image {
+            background-color: #ccc;
+        }
 
         .cnt-wrap>.content>section>article>.texts {}
 
-        .cnt-wrap>.content>section>article>.texts>h3{}
+        .cnt-wrap>.content>section article>.texts>h3{
+            line-height: 40px;
+        }
 
-        .cnt-wrap>.content>section>article>.texts>h4 {}
+        .cnt-wrap>.content>section article>.texts>h4{
+            line-height: 40px;
+            height: 40px;
+            overflow: hidden;
+        }
 
-        .cnt-wrap>.content>section>article>.texts>p {}
+        .cnt-wrap>.content>section>article>.texts>p {
+            height: 80px;
+            line-height: 20px;
+            overflow: hidden;
+        }
 
-        .cnt-wrap>.content>section>article>.texts>.icons {}
+        .cnt-wrap>.content>section article>.texts>.icons {
+            line-height: 40px;
+        }
 
         .cnt-wrap>.content>section>article>.texts>.icons>i {}
 
@@ -88,15 +121,23 @@
         /* art-top */
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top {
             display: flex;
+            column-gap: 20px;
         }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article {}
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i1 {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {
+            height: 320px;
+        }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {}
 
-        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: calc(100% / 6 * 0.5);
+            padding-right: calc(100% / 6 * 2);
+        }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
 
@@ -112,9 +153,13 @@
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm {
             display: flex;
             margin-top: 40px;
+            column-gap: 20px;
         }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
+        .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {
+            height: 320px;
+        }
 
         .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {}
 
@@ -135,19 +180,28 @@
         /* cnt-wrap2 */
         .cnt-wrap.cnt-wrap2 {}
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2 {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2 {
+            width: 100%;
+            max-width: none;
+        }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>header {
             padding-top: 80px;
             padding-bottom: 360px;
-            background-color: #f00;
+            background-color: #A31F30;
         }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {
+            width: calc(80% / 12 * 6);
+            max-width: 520px;
+        }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
             margin-top: -320px;
         }
 
@@ -155,17 +209,30 @@
             display: flex;
         }
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {
+            width: 50%;
+        }
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {
+            width: 50%;
+            text-align: center;
+        }
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
 
         .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h4 {}
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {
+            height: 120px;
+            margin-top: 20px;
+        }
 
-        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {}
+        .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {
+            line-height: 40px;
+            margin-top: 20px;
+            width: calc(100% / 6 * 4);
+            background-color: #212517;
+        }
 
         /* cnt-wrap3 */
         .cnt-wrap.cnt-wrap3 {}
@@ -180,10 +247,14 @@
 
         .cnt-wrap.cnt-wrap3>.content.cnt3>section {
             display: flex;
+            column-gap: 20px;
         }
 
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {}
 
+        .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {
+            height: 200px;
+        }
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {}
 
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {}
@@ -199,7 +270,9 @@
         .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>p {}
 
         /* ftr-wrap */
-        .ftr-wrap {}
+        .ftr-wrap {
+            background-color: #a31f30;
+        }
 
         .ftr-wrap>footer {
             width: 80%;
@@ -208,14 +281,24 @@
             margin-top: 80px;
             padding-top: 40px;
             padding-bottom: 80px;
-            background-color: #f00;
+            text-align: center;
         }
 
-        .ftr-wrap>footer>h4 {}
+        .ftr-wrap>footer>h4 {
+            line-height: 80px;
+        }
 
-        .ftr-wrap>footer>address {}
+        .ftr-wrap>footer>address {
+            line-height: 20px;
+            height: 40px;
+            overflow: hidden;
+            width: calc(100% / 12 * 8);
+            margin: 0 auto;        
+        }
 
-        .ftr-wrap>footer>.icons {}
+        .ftr-wrap>footer>.icons {
+            line-height: 80px;
+        }
 
         .ftr-wrap>footer>.icons>i {}
     </style>
@@ -224,7 +307,7 @@
 <body>
     <div class="hdr-top-wrap">
         <div class="hdr-top">
-            <i></i>
+             <i class="fa-solid fa-sleigh"></i>
         </div>
     </div>
     <div class="hdr-wrap">
@@ -255,7 +338,10 @@
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum ratione unde tempore in
                                 repudiandae id, temporibus repellendus aperiam officia omnis distinctio doloribus illo
                                 voluptatem ullam saepe praesentium veritatis ea repellat.</p>
-                            <div class="icons"><i></i><i></i></div>
+                             <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
                         </div>
                     </article>
                     <article>
@@ -266,7 +352,10 @@
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor temporibus ullam, unde
                                 laboriosam nam necessitatibus eum voluptas nesciunt accusantium excepturi sapiente
                                 perspiciatis dolorum impedit quaerat. Maiores et neque tempore dolorum?</p>
-                            <div class="icons"><i></i><i></i></div>
+                             <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -278,7 +367,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita neque hic, ipsa minus
                                 eveniet soluta ad voluptas quidem! Debitis vero recusandae dignissimos suscipit nesciunt
                                 voluptas soluta vitae facere nobis quod?</p>
-                            <div class="icons"><i></i><i></i></div>
+                             <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
                         </div>
                     </article>
                     <article>
@@ -288,7 +380,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta officia ea
                                 veritatis magni facilis tempore fugit voluptatem tempora amet repudiandae nesciunt, sunt
                                 provident molestias distinctio at, est, et doloribus!</p>
-                            <div class="icons"><i></i><i></i></div>
+                             <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
                         </div>
                     </article>
                     <article>
@@ -298,7 +393,10 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quia corrupti neque
                                 officiis consequuntur ratione modi debitis, esse hic, sit officia aliquam nihil aperiam.
                                 Dolor autem quaerat illo laborum deleniti!</p>
-                            <div class="icons"><i></i><i></i></div>
+                             <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -388,8 +486,10 @@
             <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor velit nisi quia eligendi minima
                 dolores corrupti culpa nemo mollitia sed quis, harum tempora aspernatur temporibus vitae nesciunt earum!
                 Optio, incidunt!</address>
-            <div class="icons">
-                <i></i><i></i><i></i>
+           <div class="icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
             </div>
         </footer>
     </div>
