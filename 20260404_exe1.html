@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크리스마스 사이트</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredericka+the+Great&family=Modern+Antiqua&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+    body {
+        font-family: 'Noto Sans';
+    }
+    /* 헤더탑 */
+    .hdr-top-wrap {
+        background-color: #212517;
+    }
+
+    .hdr-top-wrap>.hdr-top {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hdr-top-wrap>.hdr-top>i {
+        color: #fff;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+
+    /* 헤더 */
+    .hdr-wrap {
+        background-color: #A31F30;
+    }
+
+    .hdr-wrap>header {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        /*사이즈를 줄였을때 밀리지 않음*/
+        justify-content: space-between;
+        /*값을 주지않고 요소를 양쪽 끝으로 찢어놓음*/
+        line-height: 80px;
+        color: #fff;
+        font-family:'Caveat Brush';
+
+    }
+
+    .hdr-wrap>header>h1 {
+        font-size: 25px;
+    }
+
+    .hdr-wrap>header>ul {
+        display: flex;
+        column-gap: 20px;
+        /* 요소 사이의 간격을 20px로 설정 */
+    }
+
+    .hdr-wrap>header>ul>li {
+        font-size: 20px;
+    }
+
+
+    /* 공통 컨텐츠 */
+    .cnt-wrap {}
+
+    .cnt-wrap>.content {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .cnt-wrap>.content>header {
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .cnt-wrap>.content>header>h2 {
+        line-height: 80px;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .cnt-wrap>.content>header>h4 {
+        height: 40px;
+        line-height: 20px;
+        overflow: hidden;
+        width: calc(100% / 12 * 6);
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .cnt-wrap>.content>section {
+        margin-top: 40px;
+    }
+
+    .cnt-wrap>.content>section>article {}
+
+
+    .cnt-wrap>.content>section article>.image {
+        background-color: #ccc;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cnt-wrap>.content>section>article>.texts {}
+
+    .cnt-wrap>.content>section article>.texts>h3 {
+        line-height: 40px;
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+
+    .cnt-wrap>.content>section article>.texts>h4 {
+        line-height: 40px;
+        height: 40px;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .cnt-wrap>.content>section article>.texts>p {
+        height: 80px;
+        line-height: 20px;
+        overflow: hidden;
+        font-size: 12px;
+    }
+
+    .cnt-wrap>.content>section article>.texts>.icons {
+        line-height: 40px;
+    }
+
+    .cnt-wrap>.content>section>article>.texts>.icons>i {}
+
+
+
+
+    /* 컨텐츠1 */
+    .cnt-wrap1 {}
+
+    .cnt-wrap1>.cnt1 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header>h2 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>header>h4 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top {
+        display: flex;
+        column-gap: 20px;
+        /*이 요소는 display: flex일 때만 작동함*/
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image {
+        height: 320px;
+        color: transparent;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i1 {
+        background-image: url(./image/content1_image1.png);
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.image.i2 {
+        background-image: url(./image/content1_image2.png);
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts {
+        padding-left: calc(100% / 6 * 0.6);
+        padding-right: calc(100% / 6 * 2);
+        padding-top: 20px;
+        padding-bottom: 40px;
+        border: 1px solid #d9d9d9;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>h4 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>p {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons {
+        line-height: 40px;
+        font-size: 23px;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-top>article>.texts>.icons>i {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm {
+        display: flex;
+        margin-top: 40px;
+        column-gap: 20px;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image {
+        height: 320px;
+        color: transparent;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i1 {
+        background-image: url(./image/content1_image3.png);
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i2 {
+        background-image: url(./image/content1_image4.png);
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.image.i3 {
+        background-image: url(./image/content1_image5.png);
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts {
+        padding: 40px 20px;
+        border: 1px solid #d9d9d9;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>p {}
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons {
+        line-height: 40px;
+        font-size: 23px;
+    }
+
+    .cnt-wrap.cnt-wrap1>.content.cnt1>section>.art-btm>article>.texts>.icons>i {}
+
+
+    /* 컨텐츠2 */
+    .cnt-wrap2 {}
+
+    .cnt-wrap2>.cnt2 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header {
+        padding-top: 80px;
+        padding-bottom: 360px;
+        background-color: #A31F30;
+        color: #fff;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h2 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>header>h4 {
+        width: calc(80% / 12 * 6);
+        max-width: 520px;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: -320px;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article {
+        display: flex;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.image {
+        width: 50%;
+        color: transparent;
+        background-image: url(./image/content2_image1.png);
+        background-size: cover;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts {
+        width: 50%;
+        text-align: center;
+        padding: 80px calc(100% / 12);
+        /* calc(100% / 12) 기준은 아티클이므로 전체인 12개로 나눔 */
+        background-color: #fff;
+    }
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>h4 {}
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>p {
+        height: 120px;
+        margin-top: 20px;
+    }
+
+
+    .cnt-wrap.cnt-wrap2>.content.cnt2>section>article>.texts>button {
+        line-height: 40px;
+        margin-top: 20px;
+        width: calc(100% / 6 * 4);
+        background-color: #212517;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+
+    /* 컨텐츠3 */
+    .cnt-wrap.cnt-wrap3 {}
+
+    .cnt-wrap.cnt-wrap3>content.cnt3 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header>h2 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>header>h4 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section {
+        display: flex;
+        column-gap: 20px;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article {
+        height: 200px;
+        overflow: hidden;
+    }
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article:hover>.texts {
+        margin-top: -200px;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image {
+        height: 200px;
+        color: transparent;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i1 {
+        background-image: url(./image/content3_image1.png);
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i2 {
+        background-image: url(./image/content3_image2.png);
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i3 {
+        background-image: url(./image/content3_image3.png);
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.image.i4 {
+        background-image: url(./image/content3_image4.png);
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts {
+        padding: 40px 20px;
+        color: #fff;
+        background-color: rgba(51, 51, 51, 0.4);
+        transition: margin-top 0.5s;
+    }
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>h3 {}
+
+    .cnt-wrap.cnt-wrap3>.content.cnt3>section>article>.texts>p {}
+
+
+    /* 푸터 */
+    .ftr-warp {
+        background-color: #A31F30;
+    }
+
+    .ftr-warp>footer {
+        width: 80%;
+        max-width: 1080px;
+        margin: 0 auto;
+        margin-top: 80px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .ftr-warp>footer>h4 {
+        line-height: 80px;
+        font-size: 30px;
+    }
+
+    .ftr-warp>footer>address {
+        line-height: 20px;
+        height: 40px;
+        overflow: hidden;
+        width: calc(100% / 12 * 8);
+        margin: 0 auto;
+        font-size: 12px;
+    }
+
+    .ftr-warp>footer>.icons {
+        line-height: 80px;
+        font-size: 40px;
+    }
+
+    .ftr-warp>footer>.icons>i {}
+</style>
+
+
+
+<body>
+    <!-- 헤더탑 -->
+    <div class="hdr-top-wrap">
+        <div class="hdr-top">
+            <i class="fa-solid fa-sleigh"></i>
+        </div>
+    </div>
+
+
+    <!-- 헤더 -->
+    <div class="hdr-wrap">
+        <header>
+            <h1>logo here</h1>
+            <ul>
+                <li>About</li>
+                <li>News</li>
+                <li>Portfolio</li>
+            </ul>
+        </header>
+    </div>
+
+    <!-- 컨텐츠1 -->
+    <div class="cnt-wrap cnt-wrap1">
+        <div class="content cnt1">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat culpa et exercitationem officiis
+                    delectus ipsum corporis molestias, maxime dignissimos odit, voluptatibus nulla ut reiciendis tenetur
+                    quia id non laborum impedit!</h4>
+            </header>
+            <section>
+                <div class="art-top">
+                    <article>
+                        <div class="image i1">이미지</div>
+                        <div class="texts">
+                            <h3>Segment title</h3>
+                            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium voluptate
+                                delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
+                                expedita nihil! Beatae illo cumque labore quas ut.</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div </div> </article> <article>
+                            <div class="image i2">이미지</div>
+                            <div class="texts">
+                                <h3>Segment title</h3>
+                                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium voluptate
+                                    delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
+                                    expedita nihil! Beatae illo cumque labore quas ut.</p>
+                                <div class="icons">
+                                    <i class="fa-solid fa-thumbs-up"></i>
+                                    <i class="fa-solid fa-share-nodes"></i>
+                                </div>
+                            </div>
+                    </article>
+                </div>
+                <div class="art-btm">
+                    <article>
+                        <div class="image i1">이미지</div>
+                        <div class="texts">
+                            <h3>Segment title</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium voluptate
+                                delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
+                                expedita nihil! Beatae illo cumque labore quas ut.</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image i2">이미지</div>
+                        <div class="texts">
+                            <h3>Segment title</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium voluptate
+                                delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
+                                expedita nihil! Beatae illo cumque labore quas ut.</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="image i3">이미지</div>
+                        <div class="texts">
+                            <h3>Segment title</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit laudantium voluptate
+                                delectus eos itaque? Architecto rerum consectetur quia ipsum, dolorem nobis quod
+                                expedita nihil! Beatae illo cumque labore quas ut.</p>
+                            <div class="icons">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 컨텐츠2 -->
+    <div class="cnt-wrap cnt-wrap2">
+        <div class="content cnt2">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum quod, consequuntur quibusdam
+                    autem illo magni repudiandae nulla. Placeat sint tenetur ea suscipit optio quaerat quas quae qui
+                    minima incidunt.</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image">이미지</div>
+                    <div class="texts">
+                        <h3>Segment title</h3>
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sapiente esse dolor
+                            necessitatibus! Officia distinctio cumque nesciunt necessitatibus maiores asperiores eius.
+                            Earum voluptates mollitia perspiciatis voluptatem voluptate animi ad expedita!</p>
+                        <button>button</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- 컨텐츠3 -->
+    <div class="cnt-wrap cnt-wrap3">
+        <div class="content cnt3">
+            <header>
+                <h2>content title</h2>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nihil vero, doloremque aperiam
+                    odit exercitationem earum! Optio, mollitia nemo repellat officia quae, molestias quas corrupti
+                    reprehenderit sint, quia ea iste.</h4>
+            </header>
+            <section>
+                <article>
+                    <div class="image i1">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti recusandae quibusdam
+                            architecto iusto nemo? Vitae eveniet distinctio fugiat voluptates necessitatibus dolore ea,
+                            cum placeat animi eaque rerum sequi fuga ipsam!</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image i2">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti recusandae quibusdam
+                            architecto iusto nemo? Vitae eveniet distinctio fugiat voluptates necessitatibus dolore ea,
+                            cum placeat animi eaque rerum sequi fuga ipsam!</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image i3">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti recusandae quibusdam
+                            architecto iusto nemo? Vitae eveniet distinctio fugiat voluptates necessitatibus dolore ea,
+                            cum placeat animi eaque rerum sequi fuga ipsam!</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="image i4">이미지</div>
+                    <div class="texts">
+                        <h3>segment title</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti recusandae quibusdam
+                            architecto iusto nemo? Vitae eveniet distinctio fugiat voluptates necessitatibus dolore ea,
+                            cum placeat animi eaque rerum sequi fuga ipsam!</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <div class="ftr-warp">
+        <footer>
+            <h4>logo here</h4>
+            <address>Lorem ipsum dolor sit amet consectetur adipisicing elit. At suscipit dolor neque aut, esse magnam
+                quas maxime nihil ratione placeat sed ab sunt veritatis, ducimus omnis aspernatur sit sapiente ullam.
+            </address>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
