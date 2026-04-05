@@ -6,53 +6,90 @@
     <title>4월 사이트</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./reset.css">
+    
     <style>
         /* 헤더탑 */
+        .hdr-top-wrap {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
         .hdr-top-wrap > .hdr-top {
+            text-align: center;
         }
         .hdr-top-wrap > .hdr-top > i {
         }
 
         /*헤더*/
+        .hdr-wrap {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
+        }
         .hdr-wrap > header {
+            display: flex;
+            justify-content: space-between;
         }
         .hdr-wrap > header > h1 {
         }
         .hdr-wrap > header > ul {
+            display: flex;
+            column-gap: 20px;
         }
         .hdr-wrap > header > ul > li {
         }
 
         /* 컨텐츠 공통 */
         .cnt-wrap {
+            width: 80%;
+            max-width: 1080px;
+            margin: 80px auto 0;
         }
         .cnt-wrap > .content {
         }
         .cnt-wrap > .content > header {
+            text-align: center;
+            text-transform: capitalize;
         }
         .cnt-wrap > .content > header > h2 {
+            text-align: center;
+            line-height: 80px;
+            font-size: 40px;
         }
         .cnt-wrap > .content > header > h4 {
+            width: calc(100% / 12 * 6);
+            text-align: center;
+            height: 40px;
+            overflow: hidden;
+            line-height: 20px;
         }
         .cnt-wrap > .content > section {
+            margin-top: 40px;
         }
-        .cnt-wrap > .content > section > article {
+        .cnt-wrap > .content > section  article {
         }
-        .cnt-wrap > .content > section > article > .image {
+        .cnt-wrap > .content > section  article > .image {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #ccc;
+            height: 320px;
         }
-        .cnt-wrap > .content > section > article > .texts {
+        .cnt-wrap > .content > section  article > .texts {
         }
-        .cnt-wrap > .content > section > article > .texts > h3 {
+        .cnt-wrap > .content > section  article > .texts > h3 {
+            line-height: 40px;
+            font-size: 25px;
         }
-        .cnt-wrap > .content > section > article > .texts > h4 {
+        .cnt-wrap > .content > section  article > .texts > h4 {
         }
-        .cnt-wrap > .content > section > article > .texts > p {
+        .cnt-wrap > .content > section  article > .texts > p {
         }
-        .cnt-wrap > .content > section > article > .texts > .icons {
+        .cnt-wrap > .content > section  article > .texts > .icons {
         }
-        .cnt-wrap > .content > section > article > .texts > .icons > i {
+        .cnt-wrap > .content > section  article > .texts > .icons > i {
         }
-        .cnt-wrap > .content > section > article > .texts > button {
+        .cnt-wrap > .content > section  article > .texts > button {
         }
         
         /* 컨텐츠1 */
@@ -67,10 +104,16 @@
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top {
+            display: flex;
+            column-gap: 20px;
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article > .image {
+        }
+        .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article > .image.i1 {
+        }
+        .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article > .image.i2 {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article > .texts {
         }
@@ -85,10 +128,19 @@
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-top > article > .texts > .icons > i {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm {
+            display: flex;
+            margin-top: 40px;
+            column-gap: 20px;
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article > .image {
+        }
+        .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article > .image.i1 {
+        }
+        .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article > .image.i2 {
+        }
+        .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article > .image.i3 {
         }
         .cnt-wrap.cnt-wrap1 > .content.cnt1 > section > .art-btm > article > .texts {
         }
@@ -113,10 +165,16 @@
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section {
         }
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section > article {
+            display: flex;
         }
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section > article > .image {
+            width: 50%;
         }
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section > article > .texts {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            padding-right: calc(100% / 6 * 1);
+            padding-left: calc(100% / 6 * 1);
         }
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section > article > .texts > h3 {
         }
@@ -126,7 +184,7 @@
         }
         .cnt-wrap.cnt-wrap2 > .content.cnt2 > section > article > .texts > button {
         }
-
+        
 
         /* 컨텐츠3 */
         .cnt-wrap.cnt-wrap3 > .content.cnt3 {
@@ -138,10 +196,20 @@
         .cnt-wrap.cnt-wrap3 > .content.cnt3 > header > h4 {
         }
         .cnt-wrap.cnt-wrap3 > .content.cnt3 > section {
+            display: flex;
+            column-gap: 20px;
         }
-        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article {
+        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article {           
         }
         .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .image {
+        }
+        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .image.i1 {
+        }
+        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .image.i2 {
+        }
+        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .image.i3 {
+        }
+        .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .image.i4 {
         }
         .cnt-wrap.cnt-wrap3 > .content.cnt3 > section > article > .texts {
         }
@@ -152,8 +220,15 @@
         
         /* 푸터 */
         .ftr-warp {
+            width: 80%;
+            max-width: 1080px;
+            margin: 0 auto;
         }
         .ftr-warp > footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+            text-align: center;
         }
         .ftr-warp > footer > h4 {
         }
