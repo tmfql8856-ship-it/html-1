@@ -11,7 +11,7 @@ body{
     width: 80%;
     max-width: 1080px;
     margin: 0 auto;
-    text-align: center;
+
     background-image: url('../image/ball-1906468_640\ 1.png');
     background-repeat: repeat-x;
     
@@ -20,12 +20,14 @@ body{
     line-height: 40px;
     font-size: 35px;
     color: #fff;
+    animation: move 8s infinite linear;
 }
 
 
 /* header 영역 */
 .hdr-wrap{
     background-color: #a31f30;
+    animation: ani 0.5s 3;
 }
 .hdr-wrap>header{
     width: 80%;
@@ -36,7 +38,7 @@ body{
     line-height: 80px;
     color: #fff;
     font-weight: 700;
-    text-transform:  capitalize;
+    text-transform: capitalize;
 }
 .hdr-wrap>header>h1{
     font-size: 25px;
@@ -211,10 +213,19 @@ body{
 }
 .cnt2>section>article>.image{
     width: 50%;
+    background-image: url('../image/fang-yu-huan-tulips-10177803_1920.jpg');
+}
+.cnt2>section>article>.image>input{
+    display: none;
+}
+.cnt2>section>article>.image>input:checked+video{
+    opacity: 0;
 }
 .cnt2>section>article>.image>video{
     height: 100%;
     object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s; 
 }
 .cnt2>section>article>.texts{
     width: 50%;
@@ -233,11 +244,15 @@ body{
     width: calc(100% / 6 * 4);
     margin-top: 20px;
     font-size: 24px;
-    background-color: #212517;
+    background-color: #02defc;
     color: #fff;
     text-transform:  uppercase;
     border-radius: 20px;
     cursor: pointer;
+    
+}
+.cnt2>section>article>.texts>button>.hover{
+    animation: btn 0.5s infinite;
 }
 
 
@@ -468,8 +483,56 @@ body{
         display: block;
         font-size: 30px;
     }
+    .cnt3>section>article>.image{
+        width: 100%;
+    }
+}
 
- 
+@keyframes ani {
+    0% {
+    /* 0퍼센트 시점일 때 적용될 CSS */
+    background-color: #88ff00;
+  }
+    50% {
+    /* 50퍼센트 시점일 때 적용될 CSS */
+    background-color: #02defc;
+  }
+    75% {
+    /* 75퍼센트 시점일 때 적용될 CSS */
+    background-color: #6a0de2;
+  }
+    100% {
+    /* 100퍼센트 시점일 때 적용될 CSS */
+    background-color: #88ff00;
+  }
+}
+
+@keyframes btn {
+    0% {
+    background-color: #02defc;
+    }
+     50% {
+    background-color: #00ff6a;
+  }
+    100%{
+    background-color: #e00000;
+    }
+
+}
+
+@keyframes move {
+    0%{
+    margin-left: 0%;
+    }
+
+    50%{
+    margin-left: calc(100% - 45px);
+    }
+
+    100%{
+    margin-left: 0%;
+    }
+
 }
 
 
